@@ -9,6 +9,8 @@ import { AComponent } from './pages/a/a.component';
 import { BComponent } from './pages/b/b.component';
 import { CComponent } from './pages/c/c.component';
 
+import { BooksModule } from './modules/books/books.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,8 @@ import { CComponent } from './pages/c/c.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule // import de la classe de routage
+    AppRoutingModule, // import de la classe de routage
+    BooksModule
   ],
   providers: [],
   bootstrap: [AppComponent]
